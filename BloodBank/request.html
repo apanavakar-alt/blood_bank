@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blood Request</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+function requestSuccess(){
+alert("🩸 Blood Request Submitted Successfully! We will contact you soon.");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Emergency Blood Request</h1>
+</header>
+
+<div class="container">
+
+<form onsubmit="requestSuccess()">
+
+<input type="text" placeholder="Patient Name" required>
+
+<select required>
+<option>Select Blood Group</option>
+<option>A+</option>
+<option>B+</option>
+<option>O+</option>
+<option>AB+</option>
+</select>
+
+<input type="text" placeholder="Hospital" required>
+
+<input type="text" placeholder="Contact" required>
+
+<button type="submit">Submit Request</button>
+
+</form>
+
+<br>
+
+<button onclick="window.location.href='mainpg.html'">Back</button>
+
+</div>
+
+</body>
+</html>

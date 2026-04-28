@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+<div class="login-box">
+
+<h2>Admin Login</h2>
+
+<form onsubmit="return checkLogin()">
+
+<input type="text" id="username" placeholder="Username" required>
+
+<input type="password" id="password" placeholder="Password" required>
+
+<button type="submit">Login</button>
+
+<p>New User? <a href="newuser.html">Register</a></p>
+
+</form>
+
+</div>
+
+<script>
+
+function checkLogin(){
+
+var user = document.getElementById("username").value;
+var pass = document.getElementById("password").value;
+
+if(user === "admin" && pass === "1234"){
+    
+    alert("Login Successful");
+    window.location.href = "mainpg.html"; 
+}
+else{
+
+    alert("Incorrect Username or Password");
+
+}
+
+return false;
+
+}
+
+</script>
+
+</body>
+</html>

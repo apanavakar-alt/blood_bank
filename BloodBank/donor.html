@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Donate Blood</title>
+<link rel="stylesheet" href="stytle4.css">
+
+<script>
+function donorSuccess(){
+alert("Donor Registered Successfully! Thank you for donating blood.");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>🩸 Blood Donor Registration</h1>
+</header>
+
+<div class="form-container">
+
+<form class="donor-form" onsubmit="donorSuccess()">
+
+<div class="form-group">
+<input type="text" placeholder="Full Name" required>
+<input type="number" placeholder="Age" min="18" max="60" required>
+</div>
+
+<div class="form-group">
+<select required>
+<option>Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+
+<select required>
+<option>Select Blood Group</option>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>O+</option>
+<option>O-</option>
+<option>AB+</option>
+<option>AB-</option>
+</select>
+</div>
+
+<div class="form-group">
+<input type="email" placeholder="Email Address" required>
+<input type="text" placeholder="Phone Number" required>
+</div>
+
+<div class="form-group">
+<input type="number" placeholder="Weight (kg)" min="45" required>
+
+<select required>
+<option>Do you have any disease?</option>
+<option>No Disease</option>
+<option>Diabetes</option>
+<option>Blood Pressure</option>
+<option>Heart Disease</option>
+<option>Other</option>
+</select>
+</div>
+
+<textarea placeholder="If other disease, write here"></textarea>
+
+<div class="form-group">
+<input type="text" placeholder="City" required>
+<input type="text" placeholder="Full Address">
+</div>
+
+<button type="submit" class="register-btn">Register Donor</button>
+
+</form> <br>
+
+<button class="register-btn" onclick="window.location.href='mainpg.html'"> Back</button>
+
+</div>
+
+</body>
+</html>
